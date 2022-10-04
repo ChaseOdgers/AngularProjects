@@ -1,0 +1,10 @@
+<p>Start of Component</p>
+
+<input 
+type="text"
+class="form-control"
+[(ngModel)] = "chasesUsername">
+
+<p>{{ chasesUsername }}</p>
+
+<button (click)="onSubmitClick()" [hidden]="!chasesUsername">SUBMIT</button>
