@@ -1,0 +1,5 @@
+<button
+    (click)="onDisplayDetails()"    
+>Display Details</button>
+<p [hidden]="showDetails">Secret Password = "Tuna"</p>
+<app-timebox [hidden]="timeboxFlag > 1" *ngFor="let timebox of clickLog"></app-timebox>
